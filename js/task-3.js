@@ -10,11 +10,21 @@ console.log();
 // Використовуй умовний оператор if усередині циклу для перевірки кожного елемента и додавання до свого масиву.
 // Поверни свій новий масив з підходящими числами як результат.
 
+// function filterArray(numbers, value) {
+//   const arr = [];
+//   for (const number of numbers) {
+//     if (number > value) {
+//       arr.push(number);
+//     }
+//   }
+//   return arr;
+// }
+
 function filterArray(numbers, value) {
   const arr = [];
-  for (const number of numbers) {
-    if (number > value) {
-      arr.push(number);
+  for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] > value) {
+      arr.push(numbers[i]);
     }
   }
   return arr;
